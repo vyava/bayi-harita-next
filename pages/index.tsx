@@ -1,5 +1,6 @@
 import React from 'react'
 import DefaultLayout from '../layouts/Default'
+import BayiList from "../components/root/List";
 
 const Index: React.FunctionComponent = () => {
   // React.useEffect(() => {
@@ -12,7 +13,7 @@ const Index: React.FunctionComponent = () => {
   // })
   return (
     <DefaultLayout title="Home">
-      
+        <BayiList></BayiList>
     </DefaultLayout>
   )
 }

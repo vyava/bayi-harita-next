@@ -1,17 +1,15 @@
-import * as React from 'react'
+import React from 'react'
 import Head from 'next/head'
-import Header from '../components/root/Header'
-// import CssBaseLine from '@material-ui/core/CssBaseline';
+// import Header from '../components/root/Header'
+import CssBaseLine from '@material-ui/core/CssBaseline';
+import { Container} from "@material-ui/core";
+
 type LayoutProps = {
   title?: string
 }
-const layoutStyle = {
-  margin: 0,
-  padding: 0,
-  border: 'none'
-}
+
 const Layout: React.FunctionComponent<LayoutProps> = ({ children, title }) => (
-  <div style={layoutStyle}>
+  <>
     <Head>
       <title>{title}</title>
       <meta charSet="utf-8" />
@@ -23,9 +21,11 @@ const Layout: React.FunctionComponent<LayoutProps> = ({ children, title }) => (
       <link rel="manifest" href="/static/site.webmanifest" />
       <link rel="icon" type="image/x-icon" href="static/favicon.ico"/>
     </Head>
-    {/* <CssBaseLine/> */}
-    <Header/>
-    {children}
-  </div>
+    <CssBaseLine/>
+    {/* <Header/> */}
+    <Container fixed className="main">
+      {children}
+    </Container>
+  </>
 )
 export default Layout
