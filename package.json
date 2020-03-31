@@ -20,7 +20,7 @@
     "koa-slash": "^0.2.0",
     "koa-sslify": "^4.0.3",
     "lru-cache": "^5.1.1",
-    "next": "9.0.7",
+    "next": "9.3.2",
     "next-redux-wrapper": "^4.0.1",
     "pm2": "^3.5.0",
     "react": "16.10.1",
